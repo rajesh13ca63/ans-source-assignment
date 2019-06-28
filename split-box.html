@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="splitbox.js"></script>
+  <style>
+    .btn-color {
+        background-color: #E0E0E0;
+    }
+    .warning-mesg {
+        color: red;
+    }
+    .warning-mesg-hide {
+        display: none
+    }
+    .box-style {
+        margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <div class="row box-style">
+        <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-color" id="0">1</button>
+        </div>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-color" id="1">2</button>
+        </div>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-color" id="2">4</button>
+        </div>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-color" id="3">8</button>
+        </div>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-color" id="4">16</button>
+        </div>
+         <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-color" id="5">32</button>
+        </div>
+         <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-color" id="6">64</button>
+        </div>
+    </div>
+    <div class="box-style">
+        <label>Enter Desired Number</label>
+        <input  type="number" name="inputval" id="inputval">
+        <button type="button" class="btn btn-default" onclick="highlightBox()">Enter</button>
+    </div>
+    <div>
+        <span class="warning-mesg warning-mesg-hide" id="warning-mesg">The valid number range is 1 to 127. </span>
+    </div>
+</div>
+</body>
+</html>
